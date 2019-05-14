@@ -14,12 +14,14 @@ public class arrayList {
         Scanner sn = new Scanner(System.in);
         ArrayList<Integer> scores = new ArrayList<Integer>();
         int t = 0;
+        System.out.println("How many objects should be sorted?");
+        int h = sn.nextInt();
         do {
             System.out.println("Input next score");
             int Score = sn.nextInt();
             scores.add(Score);
         t++;
-        }while (t<6);
+        }while (t<h); 
         Collections.sort(scores, Collections.reverseOrder());
         System.out.println("This is the ordered list: ");
         for (int i : scores) {
